@@ -32,22 +32,27 @@ var circuitos;
 var platformas;
 var cursors;
 var contagem;
+var contagem2;
 var ganhou;
 
 function collectStar (player, star)
 {
   star.disableBody(true, true);
   contagem += 1;
+  contagem2 += 1;
   if(contagem == 12)
-  {
+  { 
+
       player.disableBody(true,true);
       this.scene.start("fase2");
       
+      
   }
-  if(contagem == 11)
+  
+  if(contagem2 == 23 && contagem2 == 23)
   {
     ganhou.setText('Ganhou!! Coletou todas as ' + contagem + ' peças!!');
     this.scene.start("fim");
   }
-  
+
 }

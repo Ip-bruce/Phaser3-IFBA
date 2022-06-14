@@ -2,6 +2,7 @@ class Scene6 extends Phaser.Scene{
   constructor()
   {
     super("fase2");
+    var contagem2
   }
 
      preload ()
@@ -71,7 +72,7 @@ class Scene6 extends Phaser.Scene{
       this.physics.add.overlap(player, circuitos, collectStar, null, this);
 
       //configurando variavel de pontos
-      contagem = 0;
+      contagem2 =12 ;
       //configurando variavel de texto ( para avisar quando o jogo )
       ganhou = this.add.text(""); 
     } 
@@ -101,10 +102,32 @@ class Scene6 extends Phaser.Scene{
       {
           player.setVelocityY(-330);
       }
-      
-      
-      
+      /*
+      var contagem2;
+      function collectStar (player, star)
+      {
+        star.disableBody(true, true);
+        contagem += 1;
+        contagem2 += 1;
+       if(contagem2 == 23)
+        {
+         ganhou.setText('Ganhou!! Coletou todas as ' + contagem + ' peças!!' +'                      Aperte F5 para Recomeçar');
+         player.disableBody(true,true);
+         this.scene.start("fase2");
+        
+        }
+    
+      } 
+
+      */
+       
     }
+
+
+
+
+
+
   
   
   

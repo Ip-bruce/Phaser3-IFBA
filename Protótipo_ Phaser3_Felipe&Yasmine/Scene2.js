@@ -10,6 +10,8 @@ class Scene2 extends Phaser.Scene{
     var platformas;
     var cursors;
     var contagem;
+    var contagem2;
+
     var ganhou;
 
 
@@ -83,6 +85,7 @@ class Scene2 extends Phaser.Scene{
 
       //configurando variavel de pontos
       contagem = 0;
+      contagem2 = 0;
       //configurando variavel de texto ( para avisar quando o jogo )
       ganhou = this.add.text(""); 
     } 
@@ -112,21 +115,22 @@ class Scene2 extends Phaser.Scene{
       {
           player.setVelocityY(-330);
       }
-      
+      /*
       function collectStar (player, star)
     {
-    star.disableBody(true, true);
-    contagem += 1;
-    if(contagem == 12)
-    {
-      ganhou.setText('Ganhou!! Coletou todas as ' + contagem + ' peças!!' +'                      Aperte F5 para Recomeçar');
-      player.disableBody(true,true);
-      this.scene.start("fase2");
+      star.disableBody(true, true);
+      contagem += 1;
+      contagem2 += 1;
+     if(contagem == 12)
+      {
+       ganhou.setText('Ganhou!! Coletou todas as ' + contagem + ' peças!!' +'                      Aperte F5 para Recomeçar');
+       player.disableBody(true,true);
+       this.scene.start("fase2");
       
-     }
+       }
   
-  } 
-      
+    } 
+      */
     }
   
   
