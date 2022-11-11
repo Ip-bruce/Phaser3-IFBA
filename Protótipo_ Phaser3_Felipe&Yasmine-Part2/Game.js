@@ -15,7 +15,7 @@ var config = {
 
     },
    // scene: [Scene1,Scene2]
-   scene: [fase1],
+   scene: [menu,fase1],
  //  scene: {
     //preload: preload,
    // create: create,
